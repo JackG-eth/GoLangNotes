@@ -1,0 +1,20 @@
+Go Has Four Types:
+    Basic Types:
+        numbers:
+            integers:
+                8,16,32,64bit (signed and unsigned)
+            floating points 
+            complex numbers
+        strings
+        booleans
+    Reference Types:
+        pointers
+        slices
+        maps
+        functions
+        channels
+    Aggregate Types:
+        arrays
+        structs
+    Interface Types:
+        tbc
