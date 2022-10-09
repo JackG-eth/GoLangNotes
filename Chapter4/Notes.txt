@@ -1,0 +1,9 @@
+Arrays:
+    Fixed length sequence of zero or more elements (decided at instantiation)
+    Pretty much what you expected
+    [size]type{interior}
+    Pass a pointer of the array into a function so you directly edit the array and not a copy.
+Slices:
+    
+Maps:
+Structs:
