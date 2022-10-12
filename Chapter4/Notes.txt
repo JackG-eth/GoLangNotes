@@ -4,6 +4,33 @@ Arrays:
     [size]type{interior}
     Pass a pointer of the array into a function so you directly edit the array and not a copy.
 Slices:
-    
+    Similar to an Arraylist.
+    written as []
+    Three parts, pointer, length, capacity
+    Essenetially when capacity is met, it copies itself into a new slice twice the size
+        Has an underlying Array
+    Multiple slices can share the same underlying array
 Maps:
+    Very similar to any other map
+    make(map[key]value)
+    acts like other maps e.g. java 
+        provides constant lookups
 Structs:
+    groups multiple arbitray types into a single entity.
+    example: employee record
+        type Employee struct {
+            DOB time.Time
+            Name String
+            Age int
+        }
+    the zero value for a struct is composed of zero values of each of its feilds
+    two ways to init a struct, with out without names for feilds
+    type Point struct {X,Y int}
+        p := Point{1,2} // bad generally as it makes the code fragile, writer has to remember their type
+        p:= Pint{x: 1, y: 1}
+
+    REMEMBER: Go passes copies of a variable to a fucntion. to pass it directly you need to use a pointer *       
+    Comparing Structs
+        If all the fields of the struct are comparable then the strut itself is comparable using == or !=
+        you can pass in structs as the key for maps etc.
+    Struct Embedding and Annoymous fields

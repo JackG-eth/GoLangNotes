@@ -1,0 +1,2 @@
+Go has excellent support for encoding and decoding these formats.
+    encoding/json library
